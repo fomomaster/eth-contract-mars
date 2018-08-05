@@ -122,7 +122,7 @@ contract FlyToTheMars is FlyToTheMarsEvents {
   modifier isWithinLimits(uint256 _eth)
   {
     require(_eth >= 1000000000, "pocket lint: not a valid currency"); //最小8位小数金额
-    require(_eth <= 100000000000000000000000, "no vitalik, no"); //做大10万eth
+    require(_eth <= 100000000000000000000000, "no vitalik, no"); //最大10万eth
     _;
   }
 
