@@ -283,7 +283,7 @@ contract FlyToTheMars is FlyToTheMarsEvents {
     uint256 _ethOut = _total.sub(_withdrawed);                                //计算本次真实能提数量
     playerRound_m[_rndNo][msg.sender].withdraw = _total;                      //记录下来，下次再想提就没门了
 
-    msg.sender.transfer(_ethOut);                                             //说了这么多，赚钱吧
+    msg.sender.transfer(_ethOut);                                             //说了这么多，转钱吧
 
     // 发送玩家提现事件
     emit FlyToTheMarsEvents.onWithdraw
